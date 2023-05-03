@@ -1,0 +1,257 @@
+Original
+"Process mining algorithm’s performance is traditionally measured by how well it
+achieves pareto-optimality of the mined model in terms of various properties such
+as fitness and precision with respect to the available event log. The algorithm
+has an additional goal of achieving generalization on future process instances.
+In many practical settings, the target search space of models is quite large for
+an exhaustive search; therefore, process mining algorithms, enforce a specific
+representational bias to to make a trade-off (e.g. between higher fitness and
+lower precision). In many real-world settings, process behaviour is not completely
+captured or available for mining in the event logs [3] as these logs are often
+noisy and incomplete. Process discovery algorithms when applied to real-world
+complex event logs often produce either noisy or incomprehensible models that
+either poorly fit the event log (low fitness) or over-generalize it (low precision or
+low generalization) "
+"Running Example - Sepsis Patient Administration: At a high-level, medical diagnosis process consists of gathering data, classifying and diagnosing a
+specific problem and suggesting a particular course of treatment. The notion of
+a clinical process (often also referred to as a careflow) underpins the practice of
+medicine. Clinical pathways are care plans that attempt to standardise clinical
+or medical treatment processes. The process data representing such pathways,
+is often recorded in hospital information systems and clinical data warehouses.
+To illustrate the workings of our framework, let us consider an example of sepsis
+treatment careflow, where clinicians face complicated decision problems during
+the patient treatment process in an emergency room. In practice, sepsis treatment is highly knowledge-driven and consists of predictable and unpredictable
+elements. As the process evolves, knowledge workers (team of doctors) involved
+in the process make decisions based on clinical observations and patient data
+that is being constantly updated"
+"Inverse Reinforcement Learning and Offline Reinforcement Learning. RLHF, IRL and offline
+learning are all approaches that can be used to incorporate human preferences or expertise into the
+decision-making process of an agent. However, they differ in the way that they use human input to guide
+the agent’s behavior. In IRL and imitation learning, we only observe an expert’s behavior and would
+like to infer the expert’s preferences or goals (Ng et al., 2000; Abbeel and Ng, 2004; Ziebart et al., 2008;
+Ramachandran and Amir, 2007; Neu and Szepesv´ari, 2009; Ho and Ermon, 2016; Florence et al., 2022;
+Hussein et al., 2017). In offline learning, we directly observe the cardinal rewards for the state. But the
+actions are likely to be sub-optimal. In RLHF, we observe ordinal comparisons between pairs or a set of
+actions. In one of the popular IRL frameworks, max-entropy IRL (Ziebart et al., 2008), it is also assumed
+that human choice follows a PL model. We unify the problem of RLHF and max-entropy IRL, and provide
+the first sample complexity analysis for both problems."
+"We consider a finite-horizon MDP described by a tuple M = (S, A, H, P, r, ρ), where S is a (possibly
+infinite) state space, A is a (possibly infinite) action space, H is the horizon length, P : S × A 7→ ∆(S)
+is a probability transition matrix, R : S × A 7→ ∆([0, 1]) encodes a family of reward distributions with
+r : S × A 7→ [0, 1] as the expected reward function, ρ : S 7→ ∆(S) is the initial state distribution. Upon
+executing action a from state s, the agent receives a deterministic reward r(s, a) and transits to the next
+state s
+0 with probability P(s
+0
+|s, a). The MDP transits to an absorbing termination state with zero reward
+at step H. When H = 1 and there is no transition, the model reduces to the contextual bandit problem.
+A stationary deterministic policy π : S 7→ A is a function that maps a state to an action. Correspondingly,
+the value function V
+π
+: S 7→ R of the policy π is defined as the expected sum of rewards starting at state s
+and following policy π."
+"The previous studies did not focus on the influence of experiences stored in the buffer, although such influence
+information is useful. Many of the aforementioned buffer
+properties (e.g. on-policyness and optimality) are shaped
+by the experiences stored in the buffer; thus, experiences
+should also affect performance. What if we could quantify
+the influence of the experiences? Such information could
+be used for many purposes, e.g. experience cleansing and
+analysis. Experience cleansing: We could improve the
+performance of an agent by removing negatively influential
+experiences from the buffer or save computational memory by removing non-influential experiences"
+"In practice, we need a method for efficiently estimating the
+influence of experiences (Eq. 3). We can estimate the influence by comparing agents that are prepared (or retrained)
+for each possible deletion of an experience. However, this
+requires training an agent by repeatedly executing PI (Eqs.1
+and 2) for each deletion case. This is computationally expensive and is infeasible for large D. Therefore, we need a
+new method for efficiently estimating the influence of experiences without such agent comparison. We present such
+a method in the following section."
+"The problem we consider is one faced by a fund manager who has just taken in a large amount
+of new capital. This capital needs to be integrated into the portfolio but transaction costs caused
+by large bid/ask spreads make it extremely inefficient to directly invest the entire amount immediately (i.e., the typical buy-and-hold strategy is sub-optimal). A more efficient way is to invest
+the new funds according to a solution to a dynamic mean-variance optimization that includes a
+quadratic penalty on trade size. Optimal execution of large orders was formulated as a meanvariance optimization with penalization on trades in Almgren and Chriss [1], and a multi-asset
+version of this problem was studied in Garleanu and Pedersen [ ˆ 2]. However in practice, many assets have heteroskedasticity, and therefore it is interesting to consider mean-variance preferences
+in the setting of dynamic covariance matrices given by a multi-variate GARCH (MGARCH)
+model. In addition, when volatility spikes, there is an increase in price impact (Capponi and
+Cont [3]). This negative correlation between price and volatility was also found by Black [4].
+Mantalos et al. [5] modeled such volatility by fitting skewness in the ARCH model. This work
+assumes that the penalty on trading depends on the instantaneous value of the covariance matrix
+(e.g., the condition number of the covariance matrix) to describe such price volatility. The contrary movement between degrees of freedom in covariance matrices and overall market volatility
+is highlighted in Avellaneda and Lee [6] and also touched upon in Laloux et al. [7]. This heteroskedastic problem is a linear-quadratic program, but with the added feature of non-constant
+coefficients that depend on the MGARCH process."
+"Other machine learning applications in finance include Sirignano and Spiliopoulos [15] where
+stochastic gradient descent (SGD) with deep NN architecture is used for computing prices of
+American options on large baskets of stocks, and in Han et al. [16] where an RL approach is
+used to numerically solve high-dimensional backward stochastic differential equations related
+to finance. In Fischer and Krauss [17], the authors utilized an LSTM network for predicting
+the price movement with daily S&P500 data1
+. The performance of the LSTM is mixed during
+different periods. The short-term trend prediction in the price movement on NASDAQ by the
+deep network was studied by Namdari and Durrani [18]. The authors utilized features from both
+fundamental and technical analysis as the network input. Kim et al. [19] used a graph network
+to predict the stock price movement on S&P500 data. In Liang et al. [20], they demonstrate
+how adversarial learning methods can be used to automate trading in stocks. General methods from control theory have been applied for optimal trading decisions in Barmish and Primbs
+[21], Malekpour et al. [22]. The effects of transaction costs and liquidity are well-studied (Almgren and Chriss [1], Chandra and Papanicolaou [23], Rogers and Singh [24]). In particular, the
+“aim portfolio” description given in Garleanu and Pedersen [ ˆ 2] has been a key result for the
+management of large funds. The discussed works are based on supervised learning. Therefore, the non-supervised learning approaches should also be studied as they may address more
+complicated problems."
+"The utilized neural network (NN) is composed of fully connected layers. The input contains
+the portfolio Xt−1 that has 11 elements, plus the covariance matrix of the dollar-returns Pt =
+ΨtΣtΨt whose dimension is 11×11 and also the expected value of returns µ
+>Ψt which is also
+11-dimensional. Therefore, the total dimension is 143. The hidden layer size was determined
+by considering both the training time and the NN performance. When using more complex NN
+architecture, we observed that there was no obvious improvement in performance while the training time increased considerably. On the other hand, when using even simpler NN architectures,
+we observed that the deep RL algorithm suffered from under-fitting problems. Therefore, we
+utilized four hidden layers, each of which contains 400 neurons. The output of the NN corresponds to ϕ(·, ·, ·; θ) in Algorithm 1, which is 11-dimensional. The activation function is Tanh.
+The architecture of the utilized neural network (NN) is shown in Table 5 in the appendix shows
+the detail of the architecture."
+"In this paper, we use deep learning models that include LSTM-based models and CNNs for GDP growth
+rate forecasting of major world economies. We focus on
+large economies around the world that includes developing and developed countries and use data from the past
+few decades to forecast the future decade. We present a
+recursive deep learning framework where the direct strategy is used for model development and recursive strategy
+is used for decadal forest. We also investigate what sort
+of data partitioning strategy is best for model training
+and development. We further compare the performance
+of deep learning models with traditional time series forecasting models (ARIMA and VAR) for different countries.
+Our data includes periods of smooth development, rapid
+development, and periods of financial crisis in the training
+set, in order to better prepare the test set and forecast
+data. We first use a direct strategy to evaluate the respective deep learning models and then use the best model for
+the recursive strategy where we estimate the economic indicators first, in order to forecast the decadal GDP growth
+rate. Our data features GDP along with economic indicators prior to 2019 and we forecast a decadal world economy
+outlook for 2020 - 2030."
+"ARIMA and VAR are two of the more common statistical models in time series analysis and applied for forecasting in macro-economics. ARIMA models have been used
+to predict Singapore’s quarterly GDP based on monthly
+external trade[1]. A modfied ARIMA model was used to
+predict Irish CPI by introducing an objective penalty function methods to focus on the forecast error out-of-sample
+rather than ’goodness of fit’ [80]. Sims [103] introduced the
+VAR model in economics in 1980 for for macroeconomic
+modelling and forecasting in order to deal with endogeneity issues. Freeman and Williams[40] used a VAR model
+to analyze indicator variables that relate to policy and the
+economy. They compared their model to structural equation models[51] and found a VAR is better at capturing
+policy endogeneity. A decade later, Robertson et al. [96]
+relied on a VAR model to predict United States GDP using
+six economic indicators and found that imposing imprecise
+prior constraints on VAR can lead to more accurate predictions. Abonazel et al. [2] used ARIMA model to predict
+Egyptian GDP in next decade from 2019, and Salisu et
+al. [99] analysed how the oil uncertainty stock affect 33
+countries’ GDP and the influence between the countries
+using a global VAR. Iorio et al. [55] compared France and
+Germany ’s unemployment rate and GDP growth rate in
+the future basic on a VAR model. ARIMA and VAR models remain widely applied in a range of econometrics and
+finance applications"
+"The ARIMA model has been prominent for nearly half a
+century in time series forecasting after being introduced by
+Box and Jenkins [11]. It is a combination of three components, auto-regressive model (AR), integrated average (I)
+and moving average model (MA). ARIMA models have
+three parameters to represent the three part in this model
+respectively, written as ARIMA(p, d, q). AR(p) represents
+the past value which is used to predict, p could be determined by PACF (partial auto-correlation function). I(d)
+is the times of differences to ensure the data stable, we
+use the ADF (augmented Dickey-Fuller test) to help us to
+find d. MA(q) expresses the current data and errors in
+the past q values, which is found by by analysing the ACF
+(auto-correlation function)."
+"In the recursive strategy shown in Figure 6, we will use
+the optimal model and data partitioning evaluated in the
+direct strategy. First we need to train the model, and to
+ensure consistency here we use the same training set as
+in the direct strategy for training. The second step is to
+use the data to make forecasts. Unlike the direct strategy
+where the GDP growth rate is the target, this step target is features, but the independent variables used are still
+the same. Our model features multivariate input and one
+output (multi-to-one), so we can only predict one feature
+at a time, and we will predict all features in Step 2.3 and
+Step 2.4. When we finish this two steps to forecast and
+then determine whether the length of the current features
+is enough for us to predict the decadal GDP growth rate
+in Step 2.5. If the answer is no, then we go back to the
+beginning of Step 2.3 and continue to predict the new features. However, if the answer is yes, then we make the
+final prediction, i.e. the decadal GDP growth rate."
+"In particular, we identify the main channels of risk propagation in a recurrent form to account of all the existing evidence of feedback effects in a macroeconomic system by
+putting all the components together in a multivariate structure. Our approach takes into account the dynamic nature
+of the economy, through the multivariate training of deep
+neural networks, that employ multivariate input and output
+layers which are able to capture the cross correlation between macroeconomic variables. Training is performed as
+one big complex network minimizing estimation errors and
+double counting effects among various financial variables.
+Benchmarking a series of Deep Learning algorithms versus
+Bayesian Model regressions on a test sample that includes a
+financial turbulent period in the US (2008 – 2012) we find that
+Deep Learning models provide better forecast both on a static
+perspective (model train in 1973-2005 period and forecast on
+2006 – 2018 period) and a dynamic perspective (initial model
+train in 1973-2005 period and rolling forecast with continuous re-training during the 2006 – 2018 period). Examining
+both error metrics and relevant plots it is evident that deep
+learning algorithms capture better the realized trends, especially in cases where the absence of linearities and the contemporaneous dependencies cause traditional modes to overshoot"
+"This first attempt at employing Deep Learning in macroeconomic time series forecasting shows that potential benefits may pave the ground for a wider spectrum of application in economic sciences. Of course, deep learning techniques even though they better address non-linear patterns
+they are not a panacea, especially in such challenging problem as the prediction of the Sub-prime crisis in the US, but
+they certainly lie in the correct path. Criticism could rely on
+the black box nature of the algorithm which when compared
+to traditional econometrics does not provide a clear view of
+the economic relationships, but in any case, as it has been
+proven empirically,the economy is not dominated by clear
+linear patterns but from non-linear interactions which constantly evolve. Especially under the rolling forecast framework where both techniques follow the realized trend, one
+could use the results of the 2 techniques (Linear models –
+Deep Learning models) in a combined way, so that the linear
+model provides a first order approximation of the problem at
+hand revealing the economic rational and use also the more
+precise non-linear model to correct for temporal fluctuations."
+"The Coronavirus Disease 2019 or the COVID-19 pandemic has swept almost
+all parts of the world since the first case was found in Wuhan, China, in December 2019. With the increasing number of COVID-19 cases in the world,
+SARS-CoV-2 has mutated into various variants. Given the increasingly dangerous conditions of the pandemic, it is crucial to know when the pandemic
+will stop by predicting confirmed cases of COVID-19. Therefore, many studies have raised COVID-19 as a case study to overcome the ongoing pandemic
+using the Deep Learning method, namely LSTM, with reasonably accurate
+results and small error values. LSTM training is used to predict confirmed
+cases of COVID-19 based on variants that have been identified using ECDC’s
+COVID-19 dataset containing confirmed cases of COVID-19 that have been
+identified from 30 countries in Europe. Tests were conducted using the LSTM
+and BiLSTM models with the addition of RNN as comparisons on hidden
+size and layer size. The obtained result showed that in testing hidden sizes
+25, 50, 75 to 100, the RNN model provided better results, with the minimum
+MSE value of 0.01 and the RMSE value of 0.012 for B.1.427/B.1.429 variant
+with hidden size 100. In further testing of layer sizes 2, 3, 4, and 5, the result
+shows that the BiLSTM model provided better results, with minimum MSE
+value of 0.01 and the RMSE of 0.01 for the B.1.427/B.1.429 variant with
+hidden size 100 and layer size 2."
+"Our first test was conducted by testing the number of hidden sizes implemented, combined with layer size 1 for each test, to avoid bias. Hidden sizes
+tested are 25, 50, 75, and 100. The optimal hidden size was then obtained
+by examining which hidden size gave the largest frequency of minimum loss
+value from each COVID-19 variant. Then the second test was carried out
+by testing the number of layer sizes implemented starting from 2, 3, 4, to
+5, combined with the optimal hidden size value obtained from the previous
+test. The result of the layer size test was determined in the same approach
+as the hidden size one. The final result is the optimal model configuration of
+both hidden and layer sizes to be implemented."
+"Noisy estimates are a major concern in affinity score computation. Keyword matching accuracy depends
+on authors and reviewers using consistent terminology, and subtleties are lost in the process. Textual similarity scores rely on inherently noisy language models. Reviewers typically only bid on a small fraction of
+papers; conferences often assume that the absence of a bid implies disinterest, but in conferences with many
+thousands of papers this assumption is likely inaccurate. Finally, there is some inherent modeling uncertainty
+in the entire process. The affinity scores are ultimately intended to predict downstream review quality, but it
+is unclear how keyword matching, textual similarity, and bids correlate with review quality, or even how to
+measure review quality."
+"Because RRA optimizes against an uncertainty-aware adversary, we avoid assigning paper-reviewer pairs
+with large amounts of uncertainty. Thus our approach broadly encourages assigning reviewers to papers for
+which we are certain the affinity is high. Some special cases of uncertainty sets (singleton, rectangular, or
+spherical) reduce to problems without uncertainty; these can all be solved via linear programming. However
+these limited circumstances generally do not apply to most conference setups. In general, accounting for uncertainty yields significantly different solutions that are inherently more robust than optimizing to pointwise
+affinity score estimates. Our methods satisfyingly address the convex relaxation of the reviewer allocation
+problem, permitting fractional allocations, and we then approximate the optimal discrete allocations via randomized rounding techniques that preserve the cardinality constraints of papers and reviewers"
+"Our work departs from the above by considering Q-Learning, and by lifting strong technical assumptions on the payoff functions. Specifically, we do not assume a form of the payoffs as in [26], or the
+growth of the function as in [33]. In addition, we require no knowledge of the cost gradients as in [34]. Finally, our work considers the generalised class of weighted monotone games, rather than the unweighted
+case considered by the above. This class of games is also considered in [35, 36], in which variations of
+online gradient descent are analyzed. However, the former requires weighted strong monotonicity (which
+is much more restrictive even than strict monotonicity) and the latter requires strong assumptions on the
+parameters of the learning algorithm."
+"Though general in nature, these results are not without their limitations. They rely on the assumption
+of a discrete action set, so that agent strategies all evolve on ∆. This allows us to assume the existence of
+an Equilibrium, through the compactness of ∆. However, generalising to arbitrary continuous action sets
+would widen the range of applications which our work encompasses. In addition, Theorem 3 is derived
+for continuous time QL. This is a reasonable stance to take as it has been shown repeatedly that continuous
+time approximations of algorithms provide a strong basis for analysing the algorithms themselves [47,
+17]. However, the accuracy of discrete time algorithms is always dependent on parameters, most notably
+step sizes. Such an analysis of the discrete variants presents a fruitful avenue for further research"

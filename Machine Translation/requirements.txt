@@ -1,0 +1,5 @@
+nltk
+konlpy
+openai
+transformers
+torch
